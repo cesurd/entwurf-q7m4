@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Zh5mSXEWzEw4pj2STFmA2pgLzH+o5OPuwyVHlRxtngg=' 'sha256-D7P4J0kEjtWG7wIInFpE6hwTbqnRLT3SjtLI992NhJs='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Zh5mSXEWzEw4pj2STFmA2pgLzH+o5OPuwyVHlRxtngg=' 'sha256-WebZ2YR6MMOfhOf6BfSWsaxGOstsunLHuABQ9TdF+Bo='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'">
 <title>Impressum | Schlüsseldienst MOR</title>
 <meta name="description" content="Impressum vom Schlüsseldienst MOR im Kaufland Aachen, Breslauer Straße 35, 52068 Aachen.">
 <meta name="robots" content="noindex,nofollow">
@@ -114,7 +114,7 @@ c.add('bewegt', window.CSS && CSS.supports && CSS.supports('animation-timeline: 
 <footer class="fuss" id="fuss">
 <div class="innen fuss-tuer">
 <div class="fuss-loch" aria-hidden="true"><span class="fuss-loch-licht"></span><svg class="fuss-loch-rand" viewBox="0 0 24 40" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M12 1.5a9.5 9.5 0 0 1 5.2 17.45L20.5 38.5h-17l3.3-19.55A9.5 9.5 0 0 1 12 1.5z"/></svg></div>
-<p class="fuss-satz" data-status>Mo–&#8288;Sa 7–&#8288;22&nbsp;Uhr geöffnet, sonntags geschlossen.</p>
+<p class="fuss-satz" data-status>Mo–&#8288;Sa 9–&#8288;19&nbsp;Uhr geöffnet, sonntags geschlossen.</p>
 </div>
 <div class="innen fuss-oben">
 <div class="fuss-marke">
@@ -150,7 +150,7 @@ c.add('bewegt', window.CSS && CSS.supports && CSS.supports('animation-timeline: 
 <ul>
 <li><a href="tel:+4924156529594" translate="no">0241&nbsp;56&nbsp;52&nbsp;95&nbsp;94</a></li>
 <li><address>Breslauer Straße&nbsp;35<br>52068&nbsp;Aachen</address></li>
-<li>Mo–&#8288;Sa 7–&#8288;22&nbsp;Uhr</li>
+<li>Mo–&#8288;Sa 9–&#8288;19&nbsp;Uhr</li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Breslauer+Stra%C3%9Fe+35%2C+52068+Aachen" target="_blank" rel="noopener">Route planen</a></li>
 </ul>
 </div>
@@ -176,7 +176,7 @@ Anrufen
 const d = document, h = d.documentElement;
 const q = s => d.querySelector(s), qa = s => [...d.querySelectorAll(s)];
 const zwei = n => String(n).padStart(2, '0');
-const D = {"tz":"Europe/Berlin","von":420,"bis":1320,"feiertage_bestaetigt":false,"fest":["01-01","05-01","10-03","11-01","12-25","12-26"],"ostern":[-2,1,39,50,60],"neutral":["12-24","12-31"],"saetze":{"offen":"Geöffnet bis 22 Uhr.","vor_oeffnung_heute":"Öffnet heute um 7 Uhr.","morgen":"Öffnet morgen um 7 Uhr.","spaeter":"Öffnet am {wochentag} um 7 Uhr.","neutral":"Mo–Sa 7–22 Uhr","notdienst":"Laden zu, Notdienst bis {bis} Uhr.","notdienst_ab":"Laden zu, Notdienst ab {von} Uhr."},"nd":[[480,1440],[480,1440],[480,1440],[480,1440],[480,1440],[480,1560],[480,1560]],"wochentage":["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"],"stimmung":"nnnnnddtttttttttttttddnn","stufen":{"n":"nacht","d":"daemmerung","t":"tag"},"farben":{"nacht":"#13181b","daemmerung":"#1d2428","tag":"#262f35"}};
+const D = {"tz":"Europe/Berlin","von":540,"bis":1140,"feiertage_bestaetigt":false,"fest":["01-01","05-01","10-03","11-01","12-25","12-26"],"ostern":[-2,1,39,50,60],"neutral":["12-24","12-31"],"saetze":{"offen":"Geöffnet bis 19 Uhr.","vor_oeffnung_heute":"Öffnet heute um 9 Uhr.","morgen":"Öffnet morgen um 9 Uhr.","spaeter":"Öffnet am {wochentag} um 9 Uhr.","neutral":"Mo–Sa 9–19 Uhr","notdienst":"Laden zu, Notdienst bis {bis} Uhr.","notdienst_ab":"Laden zu, Notdienst ab {von} Uhr.","notdienst_vor_oeffnung":"Laden ab 9 Uhr, Notdienst bis {bis} Uhr."},"nd":[[480,1440],[480,1440],[480,1440],[480,1440],[480,1440],[480,1560],[480,1560]],"wochentage":["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"],"stimmung":"nnnnnddtttttttttttttddnn","stufen":{"n":"nacht","d":"daemmerung","t":"tag"},"farben":{"nacht":"#13181b","daemmerung":"#1d2428","tag":"#262f35"}};
 const STATISTIK = "";
 if (STATISTIK) addEventListener('load', () => setTimeout(() => { const s = d.createElement('script'); s.src = STATISTIK; d.body.appendChild(s); }, 1000));
 const lade = img => {
@@ -212,10 +212,10 @@ const sonder = n => D.neutral.includes(mmtt(datum(n)));
 const unklar = n => datum(n).wt !== 0 && (sonder(n) || (!D.feiertage_bestaetigt && feiertag(n)));
 const zu = n => datum(n).wt === 0 || (D.feiertage_bestaetigt && feiertag(n));
 const uz = m => (Math.floor(m / 60) % 24 || 24) + (m % 60 ? ':' + zwei(m % 60) : '');
-const nd = (n, min) => {
+const nd = (n, min, satz = D.saetze.notdienst) => {
 const a = D.nd[datum(n).wt], v = !unklar(n - 1) && D.nd[datum(n - 1).wt];
 const bis = v && min < v[1] - 1440 ? v[1] : a && min >= a[0] && min < a[1] ? a[1] : 0;
-return bis ? D.saetze.notdienst.replace('{bis}', uz(bis)) : '';
+return bis ? satz.replace('{bis}', uz(bis)) : '';
 };
 const status = jetzt => {
 const t = teile(jetzt), heute = tagnr(t.year, t.month, t.day), min = t.hour * 60 + t.minute;
@@ -224,7 +224,7 @@ if (unklar(heute)) return s;
 const notdienst = nd(heute, min), a = D.nd[datum(heute).wt];
 if (!zu(heute) && min < D.bis) {
 s.offen = min >= D.von;
-s.satz = s.offen ? D.saetze.offen : notdienst || D.saetze.vor_oeffnung_heute;
+s.satz = s.offen ? D.saetze.offen : nd(heute, min, D.saetze.notdienst_vor_oeffnung) || D.saetze.vor_oeffnung_heute;
 return s;
 }
 if (notdienst) { s.satz = notdienst; return s; }
